@@ -1,0 +1,60 @@
+@import '../../scss/style.scss';
+.ticket {
+  padding: 20px;
+  margin-bottom: 20px;
+  background: $block-color;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  font-family: $default-font;
+  @include media-mobile {
+    padding: 5px;
+  }
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.price {
+  color: $main-color;
+  font-size: 24px;
+  line-height: 24px;
+}
+.logo img {
+  height: 36px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  min-width: 106px;
+  @include media-mobile {
+    min-width: auto;
+  }
+}
+
+.secondary-date {
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: $secondary-color;
+  @include media-mobile {
+    font-size: 8px;
+  }
+}
+.date {
+  color: $text-color;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  @include media-mobile {
+    font-size: 10px;
+  }
+}
